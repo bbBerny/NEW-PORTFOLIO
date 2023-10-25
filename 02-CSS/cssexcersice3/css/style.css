@@ -1,0 +1,95 @@
+body{
+    background-color: white;
+}
+
+.vertblackline1{
+    background-color: black;
+    position: absolute;
+    top: 200px;
+    width: 10px;
+    height: 400px;
+    left: 48px;
+
+}
+
+.vertblackline2{
+    background-color: black;
+    position: absolute;
+    top: 200px;
+    width: 10px;
+    height: 400px;
+    left: 258px;
+}
+
+.vertblackline3{
+    background-color: black;
+    position: absolute;
+    top: 200px;
+    width: 10px;
+    height: 400px;
+    left: 323px;
+}
+
+.vertblackline4{
+    background-color: black;
+    position: absolute;
+    top: 200px;
+    width: 10px;
+    height: 400px;
+    left: 533px;
+}
+
+.horblackline1{
+    background-color: black;
+    position: absolute;
+    top: 285px;
+    width: 484px;
+    height: 10px;
+    left: 260px;
+}
+
+.horblackline2{
+    background-color: black;
+    position: absolute;
+    top: 493px;
+    width: 743px;
+    height: 10px;
+    left: 0px;
+}
+
+.horblackline3{
+    background-color: black;
+    position: absolute;
+    top: 578px;
+    width: 330px;
+    height: 10px;
+    left: 0px;
+}
+
+
+.bluebox{
+    background-color: blue;
+    position: relative;
+    top: 495px;
+    width: 200px;
+    height: 75px;
+    left: 50px;
+}
+
+.redbox{
+    background-color: red;
+    position: relative;
+    top: 210px;
+    width: 200px;
+    height: 200px;
+    left: 325px;
+}
+
+.orangebox{
+    background-color: orange;
+    position: absolute;
+    top: 210px;
+    width: 200px;
+    height: 75px;
+    left: 543px;
+}

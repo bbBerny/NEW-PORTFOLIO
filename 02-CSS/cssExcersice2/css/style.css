@@ -1,0 +1,27 @@
+div{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.topContainer {
+    background-color: red;
+    color: white;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.midContainer{
+    background-color: blue;
+    color:white;
+    position: sticky;
+    
+}
+
+.botContainer{
+    background-color: yellow;
+    position: fixed;
+    top: 650px;
+    left: 50px;
+}
