@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express test</title>
+</head>
+
+<body>
+    <% if (locals.error) { %>
+        <h3>
+            <%= error %>
+        </h3>
+        <% } %>
+       
+        <h1>Hello:</h1>
+        <% for (const name of names) { %>
+            <li><a href="/wazzup?name=<%= name %>"><%= name %></a></li>
+          <% } %>
+        
+            <form action="/greet" method="get">
+                Register:
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="submit" value="go next">
+            </form>
+
+            <form action="/task" method="post">
+                <h1>TODO List</h1>
+                <input type="text" name="tasks" id="tasks" placeholder="Task">
+                <input type="submit" value="go next">
+                <ul id="todo-list">
+                    <% for (const task of tasks) { %>
+                        <li>
+                            <%= task %>
+                            <a href="/delete-task?task=<%= task %>">Delete</a>
+                            <i class="fa fa-arrow-up" onclick="moveUp(this.parentElement)"></i>
+                            <i class="fa fa-arrow-down" onclick="moveDown(this.parentElement)"></i>
+                        </li>
+                      <% } %>
+                </ul>
+            </form>
+
+            <h1>Task List</h1>
+            <ul>
+                <% for (const task of tasks) { %>
+                    <li><%= task %></li>
+                  <% } %>
+            </ul>
+
+
+            <style>
+                .fa-arrow-up, .fa-arrow-down {
+                cursor: pointer;
+                color: black;
+                }
+
+                .fa-arrow-up {
+                float: left;
+                }
+
+                .fa-arrow-down {
+                float: right;
+                }
+
+            </style>
+
+</body>
+
+</html>

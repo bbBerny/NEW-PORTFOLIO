@@ -1,0 +1,14 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    background-color: cyan !important;
+    color: white;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}

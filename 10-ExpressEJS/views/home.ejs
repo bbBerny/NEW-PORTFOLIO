@@ -1,0 +1,28 @@
+<%- include("partials/header"); -%>
+
+    <img src="../images/StarLion.png" alt="lion brewery" />
+
+    <% if(locals.name) { %>
+        <h2> Hi <%= name %> 
+        </h2>
+    <% } %>
+
+    <form action="/" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <input type="submit" />
+    </form>
+
+    <% posts.forEach((post) => { %>
+        <div>
+            <hr/>
+            <h1>
+                <%= post.title %>
+            </h1>
+            <p>
+                <%= post.content %>
+            </p>
+        </div>
+    <% }); %>
+    
+<%- include("partials/footer"); -%>
